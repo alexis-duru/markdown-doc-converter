@@ -1,0 +1,31 @@
+{
+    "name": "markdown-doc-converter",
+    "version": "1.0.0",
+    "description": "",
+    "main": "core.js",
+    "scripts": {
+        "test": "node --test",
+        "fs": "node packages/fs.mjs",
+        "start:server": "node packages/server/index.mjs",
+        "mdc": "node packages/cli.mjs",
+        "clean": "rm -rf ./playground/*.md",
+        "lint": "eslint ./**/*.mjs",
+        "format": "prettier . --write",
+        "prepare": "husky install"
+    },
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "commander": "^11.0.0",
+        "fastify": "^4.24.3",
+        "lodash": "^4.17.21"
+    },
+    "devDependencies": {
+        "eslint": "^8.50.0",
+        "eslint-config-prettier": "^9.0.0",
+        "eslint-plugin-prettier": "^5.0.0",
+        "husky": "^8.0.3",
+        "lint-staged": "^14.0.1",
+        "prettier": "3.0.3"
+    }
+}
